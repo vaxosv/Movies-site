@@ -1,0 +1,13 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">logo</a>
+    <input type="text" (input)="onSearchChange($event.target.value)">
+    <nav>
+      <ul>
+        <li><a routerLink="/">home</a></li>
+        <li><a routerLink="/about">about</a></li>
+        <li><a routerLink="/contact">contact up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

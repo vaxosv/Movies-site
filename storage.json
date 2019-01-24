@@ -1,0 +1,31 @@
+{
+    "telemetry.machineId": "a67e0c3998c49db3a9386c05e824565948a0ab0e8f02edfcbcec55af80c404f9",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/vaxosv/Documents/movies-site"
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/vaxosv/Documents/movies-site",
+                "external": "file:///home/vaxosv/Documents/movies-site",
+                "path": "/home/vaxosv/Documents/movies-site",
+                "scheme": "file"
+            },
+            "backupPath": "/home/vaxosv/Documents/movies-site/Backups/107d08b78b445431f49f8790cf2af7ff",
+            "uiState": {
+                "mode": 1,
+                "x": 1857,
+                "y": 272,
+                "width": 1024,
+                "height": 768
+            }
+        }
+    }
+}
