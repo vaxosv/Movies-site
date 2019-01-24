@@ -11,6 +11,12 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MovieComponent } from './movie/movie.component';
+import { MovieHeaderComponent } from './movie/movie-header/movie-header.component';
+import { MovieBodyComponent } from './movie/movie-body/movie-body.component';
+import { SimilarComponent } from './movie/similar/similar.component';
+import { PlayComponent } from './movie/play/play.component';
+import { CommentsComponent } from './movie/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MovieComponent,
+    MovieHeaderComponent,
+    MovieBodyComponent,
+    SimilarComponent,
+    PlayComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule, 
