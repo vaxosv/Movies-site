@@ -4,7 +4,6 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -17,6 +16,13 @@ import { MovieBodyComponent } from './movie/movie-body/movie-body.component';
 import { SimilarComponent } from './movie/similar/similar.component';
 import { PlayComponent } from './movie/play/play.component';
 import { CommentsComponent } from './movie/comments/comments.component';
+import { HeaderComponent } from './profile/header/header.component';
+import { BodyComponent } from './profile/body/body.component';
+import { ActivityComponent } from './profile/body/activity/activity.component';
+import { PlaylistsComponent } from './profile/body/playlists/playlists.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +36,21 @@ import { CommentsComponent } from './movie/comments/comments.component';
     MovieBodyComponent,
     SimilarComponent,
     PlayComponent,
-    CommentsComponent
+    CommentsComponent,
+    HeaderComponent,
+    BodyComponent,
+    ActivityComponent,
+    PlaylistsComponent,
+    RegisterComponent,
+    ForgetpassComponent,
+    SearchComponent,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
