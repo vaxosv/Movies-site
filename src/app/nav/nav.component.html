@@ -1,17 +1,22 @@
 <header>
   <div class="container">
     <a routerLink="/" class="logo">Fluorite</a>
-    <input type="text" (input)="onSearchChange($event.target.value)">
+    <div class="in">
+      <input type="text" (input)="onSearchChange($event.target.value)">
+    </div>
     <nav>
-      <ul>
+      <ul >
         <li><a routerLink="/">home</a></li>
         <li><a routerLink="/about">about</a></li>
         <li><a routerLink="/contact">contact up</a></li>
         <li><a routerLink="/profile">profile</a></li>
       </ul>
       <div class="notifications">
+        <i class="fa fa-bell"></i>
       </div>
-      <div class="user">es me var useri</div>
+      <div *ngIf="user" class="user" (click)="clickMe()">
+        useri
+      </div>
     </nav>
   </div>
 </header>
