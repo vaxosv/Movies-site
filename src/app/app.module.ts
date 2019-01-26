@@ -3,7 +3,12 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
+// assets
+import { AngularFontAwesomeModule } from "angular-font-awesome";
 
+
+
+// components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -23,6 +28,8 @@ import { PlaylistsComponent } from './profile/body/playlists/playlists.component
 import { RegisterComponent } from './register/register.component';
 import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { SearchComponent } from './search/search.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +51,15 @@ import { SearchComponent } from './search/search.component';
     RegisterComponent,
     ForgetpassComponent,
     SearchComponent,
+    NotfoundComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$yell: #bfbb2c;
+$purp: #8b429b;
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
 
-// .maincolor{
-//     color: #bfbb2c;
-//     color: #8b429b;
-// }
+a{
+	color: inherit;
+}
+
+html, body { 
+	height: 100%;
+	background-color: rgb(37, 22, 36);
+	color: white;
+}
+body {
+    margin: 0 auto;
+	// width: 1366px;
+	height: 1000px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;  
+}
