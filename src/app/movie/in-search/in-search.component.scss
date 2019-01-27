@@ -1,0 +1,20 @@
+.main{
+    display: flex;;
+    align-items: flex-start;
+    height: 50px;
+    margin: 5px;
+    img{
+        $size: 50px;
+        width: $size;
+        height: $size;
+    }
+    .info{
+        .name{
+            font-size: 20px;
+        }
+        .year{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}

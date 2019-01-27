@@ -1,9 +1,16 @@
-<header (click)="clickMe()">
+<header>
   <div class="container">
     <a routerLink="/" class="logo">Fluorite</a>
     <div class="in">
       <input type="text" spellcheck="false" (input)="onSearchChange($event.target.value)">
-      
+      <ul  [class.searching]="search">
+        <div class="const" *ngIf="search">
+          <li *ngFor="let item of searchlist; let i = index">
+           <app-in-search name={{item.name}} year={{item.id}} src=""></app-in-search>
+          </li>
+          <a href="#">show more</a>
+        </div>
+      </ul>
     </div>
     <nav>
       <ul >

@@ -10,6 +10,8 @@ header {
     position: absolute;
     padding-right: 20px;
     font-size: 18px;
+    top: 0;
+    position: fixed;
     .container{
         // background: #7700FF;
         display: flex;
@@ -31,6 +33,7 @@ header {
         .in{
             display: flex;
             align-items: center;
+            position: relative;
 
             input[type="text"]
             {
@@ -61,14 +64,49 @@ header {
             transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
             transform: none;
             transform-origin: 50% 50% 0;
-
+            background-color: rgb(37, 22, 36);
 
             margin: 10px;
             width: 400px;
             height: 8px;
             outline: none;
+            z-index: 0;
+
         }
- 
+        
+        .searching{
+            list-style-type: none;
+            left: 10px;
+            top: 30px;
+            border-radius: 10px;
+            display: block;
+            position: absolute;
+            width: 423px;
+            height: 200px;
+            background-color: rgba(122, 132, 145, 0.466);
+            z-index: -5;
+            animation: aa ease 1s;
+            padding: 10px;
+            padding-top: 30px;
+            overflow: hidden;
+
+            
+            a{
+                position: absolute;
+                bottom: 0px;    
+            }
+        }
+        
+        @keyframes aa {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+
         }
         
         nav {
@@ -118,3 +156,4 @@ header {
         }
     }
 }
+

@@ -29,6 +29,7 @@ import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { SearchComponent } from './search/search.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProfileComponent } from './profile/profile.component';
+import { InSearchComponent } from './movie/in-search/in-search.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ProfileComponent } from './profile/profile.component';
     ForgetpassComponent,
     SearchComponent,
     NotfoundComponent,
-    ProfileComponent
+    ProfileComponent,
+    InSearchComponent,
   ],
   imports: [
     BrowserModule,

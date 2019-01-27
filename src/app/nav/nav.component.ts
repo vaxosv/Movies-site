@@ -1,59 +1,47 @@
 import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
-import { ElementRef, ViewChild } from "@angular/core";
 import * as $ from "jquery";
+import { movie } from 'src/interfaces/movie';
 
 @Component({
   selector: "app-nav",
   templateUrl: "./nav.component.html",
   styleUrls: ["./nav.component.scss"],
-  
 })
 export class NavComponent implements OnInit {
-  user: boolean;
-  constructor(private data: DataService, private elementRef: ElementRef) {}
 
-  clickMe() {
-    // console.dir(this.elementRef.nativeElement.childNodes[0].clientHeight);
-  }
+  user: boolean;
+  search: boolean = false;
+  searchlist: any[]= []
+  
+  constructor(private data: DataService,) {}
+
 
   ngOnInit() {
     this.user = this.data.signedin;
-    window.addEventListener("scroll", this.jqNavScroll, true);
-    this.jqNavScroll()
   }
 
-  scrollEvent = (event: any): void => {
-    // console.log(event.srcElement.scrollingElement.scrollTop);
-  };
 
   onSearchChange(searchValue: string) {
     this.data.getusers().subscribe(data => {
-      data = JSON.parse(data);
-      console.log(data);
+      let sh = searchValue;
+      var tempwar: object[] = JSON.parse(data);  
+
+      this.searchlist = tempwar.filter((a: movie) => a.id == sh)
+      
+      
+      this.ifelse(this.searchlist)
     });
-    console.log(searchValue);
+    
   }
 
-
-  jqNavScroll(){
-      let height = $("header").height();
-      var scroll = $(window).scrollTop();
-
-    // if (scroll) {
-      $("header").css({ 
-        top: 0,
-        position: "fixed"
-       });
-    //   console.log("trans");
-    // } else {
-    //   $("header").css({ 
-    //     position: "absolute",
-    //   });
-    //   console.log("red");
-    // }
+  ifelse(a){
+    if (a.length > 0) {
+      this.search = true
+    } else {
+      this.search = false
+    }
   }
-  
-  
+
   
 }
