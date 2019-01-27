@@ -1,8 +1,9 @@
-<header>
+<header (click)="clickMe()">
   <div class="container">
     <a routerLink="/" class="logo">Fluorite</a>
     <div class="in">
-      <input type="text" (input)="onSearchChange($event.target.value)">
+      <input type="text" spellcheck="false" (input)="onSearchChange($event.target.value)">
+      
     </div>
     <nav>
       <ul >
@@ -14,7 +15,7 @@
       <div class="notifications">
         <i class="fa fa-bell"></i>
       </div>
-      <div *ngIf="user" class="user" (click)="clickMe()">
+      <div *ngIf="user" class="user" >
         useri
       </div>
     </nav>
