@@ -6,7 +6,7 @@
       <ul  [class.searching]="search">
         <div class="const" *ngIf="search">
           <li *ngFor="let item of searchlist; let i = index">
-           <app-in-search name={{item.name}} year={{item.id}} src=""></app-in-search>
+           <app-in-search [movie]="item" ></app-in-search>
           </li>
           <a href="#">show more</a>
         </div>

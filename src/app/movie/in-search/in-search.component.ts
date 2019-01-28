@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { movie } from 'src/interfaces/movie';
 
 @Component({
   selector: 'app-in-search',
@@ -6,9 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./in-search.component.scss']
 })
 export class InSearchComponent implements OnInit {
-@Input() name: string
-@Input() year: number
-@Input() imgsrc: number
+@Input() movie: movie
   constructor() { }
 
   ngOnInit() {

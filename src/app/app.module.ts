@@ -30,6 +30,7 @@ import { SearchComponent } from './search/search.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InSearchComponent } from './movie/in-search/in-search.component';
+import { TopprofileComponent } from './profile/topprofile/topprofile.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { InSearchComponent } from './movie/in-search/in-search.component';
     NotfoundComponent,
     ProfileComponent,
     InSearchComponent,
+    TopprofileComponent,
   ],
   imports: [
     BrowserModule,
