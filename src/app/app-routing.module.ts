@@ -25,15 +25,15 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 
 const routes: Routes = [
-  {
-    path: "",
-    component: HomeComponent
-  },
   // {
   //   path: "",
   //   redirectTo: "auth",
   //   pathMatch: "full"
   // },
+  {
+    path: "home",
+    component: HomeComponent
+  },
   {
     path: "about",
     component: AboutComponent

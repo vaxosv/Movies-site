@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from 'src/interfaces/user';
 
 @Component({
   selector: 'app-topprofile',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topprofile.component.scss']
 })
 export class TopprofileComponent implements OnInit {
-
+  @Input() user: User
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

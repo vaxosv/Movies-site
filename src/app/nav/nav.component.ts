@@ -1,3 +1,4 @@
+import { User } from 'src/interfaces/user';
 import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
@@ -9,8 +10,8 @@ import { movie } from 'src/interfaces/movie';
   styleUrls: ["./nav.component.scss"],
 })
 export class NavComponent implements OnInit {
-
-  user: boolean;
+  user: User;
+  isuser: boolean;
   search: boolean = false;
   searchlist: any[]= []
   
@@ -18,7 +19,7 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit() {
-    this.user = this.data.signedin;
+    this.isuser = this.data.signedin;
   }
 
 

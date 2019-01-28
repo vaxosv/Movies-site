@@ -14,7 +14,7 @@
     </div>
     <nav>
       <ul >
-        <li><a routerLink="/">home</a></li>
+        <li><a routerLink="/home">home</a></li>
         <li><a routerLink="/about">about</a></li>
         <li><a routerLink="/contact">contact up</a></li>
         <li><a routerLink="/profile">profile</a></li>
@@ -23,7 +23,7 @@
         <i class="fa fa-bell"></i>
       </div>
       <div *ngIf="user" class="user" >
-        useri
+        <app-topprofile [user]="user"></app-topprofile>
       </div>
     </nav>
   </div>

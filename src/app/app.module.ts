@@ -1,3 +1,4 @@
+import { BodyComponent } from './profile/body/body.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from "@angular/forms";
@@ -5,9 +6,11 @@ import { HttpClientModule } from "@angular/common/http";
 
 // assets
 import { AngularFontAwesomeModule } from "angular-font-awesome";
+import { SlickModule } from "ngx-slick";
 
 
 // components
+import { BodyComponent1 } from './search/body/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -21,7 +24,6 @@ import { SimilarComponent } from './movie/similar/similar.component';
 import { PlayComponent } from './movie/play/play.component';
 import { CommentsComponent } from './movie/comments/comments.component';
 import { HeaderComponent } from './profile/header/header.component';
-import { BodyComponent } from './profile/body/body.component';
 import { ActivityComponent } from './profile/body/activity/activity.component';
 import { PlaylistsComponent } from './profile/body/playlists/playlists.component';
 import { RegisterComponent } from './register/register.component';
@@ -31,9 +33,12 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InSearchComponent } from './movie/in-search/in-search.component';
 import { TopprofileComponent } from './profile/topprofile/topprofile.component';
+import { SliderComponent } from './slider/slider.component';
+import { NavComponent1 } from './search/nav/nav.component';
 
 @NgModule({
   declarations: [
+    BodyComponent1,
     AppComponent,
     NavComponent,
     HomeComponent,
@@ -46,7 +51,6 @@ import { TopprofileComponent } from './profile/topprofile/topprofile.component';
     PlayComponent,
     CommentsComponent,
     HeaderComponent,
-    BodyComponent,
     ActivityComponent,
     PlaylistsComponent,
     RegisterComponent,
@@ -56,6 +60,9 @@ import { TopprofileComponent } from './profile/topprofile/topprofile.component';
     ProfileComponent,
     InSearchComponent,
     TopprofileComponent,
+    SliderComponent,
+    BodyComponent,
+    NavComponent1
   ],
   imports: [
     BrowserModule,
@@ -63,6 +70,7 @@ import { TopprofileComponent } from './profile/topprofile/topprofile.component';
     HttpClientModule,
     ReactiveFormsModule,
     AngularFontAwesomeModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
