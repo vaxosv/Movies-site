@@ -6,7 +6,8 @@ import { HttpClientModule } from "@angular/common/http";
 
 // assets
 import { AngularFontAwesomeModule } from "angular-font-awesome";
-import { SlickModule } from "ngx-slick";
+// import { CarouselModule } from "angular2-carousel";
+import { SlickCarouselModule } from "ngx-slick-carousel";
 
 
 // components
@@ -35,6 +36,7 @@ import { InSearchComponent } from './movie/in-search/in-search.component';
 import { TopprofileComponent } from './profile/topprofile/topprofile.component';
 import { SliderComponent } from './slider/slider.component';
 import { NavComponent1 } from './search/nav/nav.component';
+import { SlideComponent } from './slider/slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,8 @@ import { NavComponent1 } from './search/nav/nav.component';
     TopprofileComponent,
     SliderComponent,
     BodyComponent,
-    NavComponent1
+    NavComponent1,
+    SlideComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,7 @@ import { NavComponent1 } from './search/nav/nav.component';
     HttpClientModule,
     ReactiveFormsModule,
     AngularFontAwesomeModule,
-    SlickModule.forRoot()
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

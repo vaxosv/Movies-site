@@ -1,3 +1,55 @@
-.main{
-    margin-top: 70px;
+// .container{
+// 	width: 300px;
+// 	height: 200px;
+// 	position: relative;
+// 	left: 500px;
+// 	overflow: hidden;
+// 	border: 1px salmon solid;
+// 	.div{
+// 		width: 200px;
+// 		height: 150px;
+// 		background-color: rgba(77, 52, 167, 0.589);
+// 		border: 1px solid gold;
+// 		display: inline-block;
+// 		position: absolute;
+// 	}
+
+// 	.div1{
+// 		left: -250px;
+// 		background-color:red;
+// 	}
+// 	.div2{
+// 		left: 50px;
+// 		background-color:blue;
+// 	}
+// 	.div3{
+// 		left: 350px;
+// 		background-color: green;
+// 	}
+	
+// }
+
+.cont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	perspective: 500px;
+
+	ngx-slick-carousel{
+		width: 30%;
+		height: 400px;
+		position: relative;
+	}
 }
+
+// .slick-slide {
+// 	// margin-top: 100px;
+// //    height:600px;
+// }
+
+// .slick-slide img {
+//    height:400px;
+//    width: 300px;
+// }
+	

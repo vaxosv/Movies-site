@@ -3,6 +3,7 @@ import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
 import { movie } from 'src/interfaces/movie';
+import { Margin } from 'src/common metods/marginTop';
 
 @Component({
   selector: "app-nav",
@@ -19,6 +20,7 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit() {
+    Margin.margin(".margin");
     this.isuser = this.data.signedin;
   }
 
