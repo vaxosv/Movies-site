@@ -1,13 +1,13 @@
 import { BodyComponent } from './profile/body/body.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // assets
-import { AngularFontAwesomeModule } from "angular-font-awesome";
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // import { CarouselModule } from "angular2-carousel";
-import { SlickCarouselModule } from "ngx-slick-carousel";
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 // components

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-import * as $ from "jquery";
+import * as $ from 'jquery';
 
 @Component({
   selector: "app-slider",
@@ -22,7 +22,8 @@ export class SliderComponent implements OnInit {
       img:"http://t3.gstatic.com/images?q=tbn:ANd9GcSsaMDp_xKXPXpnHwJzv_SpU79Egd15wd7KccS3OSr4l917Fwwq"
     },
     { 
-      img: "https://contentserver.com.au/assets/661558_p15674164_v_v8_ac.jpg" },
+      img: "https://contentserver.com.au/assets/661558_p15674164_v_v8_ac.jpg" 
+    },
     {
       img:"http://www.gstatic.com/tv/thumb/v22vodart/12858314/p12858314_v_v8_aa.jpg"
     }
